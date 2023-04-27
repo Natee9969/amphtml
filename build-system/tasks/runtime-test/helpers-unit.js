@@ -140,7 +140,7 @@ function getJsFilesFor(cssFile, cssJsFileMap) {
 
 /**
  * Computes the list of unit tests to run under difference scenarios
- * @param {{bentoOnly?: boolean}} [options]
+ * @param {{bentoOnly?: boolean}} options
  * @return {Array<string>|void}
  */
 function getUnitTestsToRun({bentoOnly = false} = {}) {
@@ -182,7 +182,7 @@ function getUnitTestsToRun({bentoOnly = false} = {}) {
  * Extracts the list of unit tests to run based on the changes in the local
  * branch. Return value is cached to optimize for multiple calls.
  *
- * @param {{bentoOnly?: boolean}} [options]
+ * @param {{bentoOnly?: boolean}} options
  * @return {!Array<string>}
  */
 function unitTestsToRun({bentoOnly = false} = {}) {

@@ -6,7 +6,6 @@
 const dedent = require('dedent');
 const {GitHubApi} = require('./utils');
 const {getExtensionsAndComponents, getSemver} = require('../npm-publish/utils');
-const {GraphQlQueryResponseData} = require('@octokit/graphql'); // eslint-disable-line @typescript-eslint/no-unused-vars
 
 const prereleaseConfig = {
   'beta-opt-in': true,
@@ -14,6 +13,10 @@ const prereleaseConfig = {
   'stable': false,
   'lts': false,
 };
+
+/**
+ * @typedef {import('@octokit/graphql').GraphQlQueryResponseData} GraphQlQueryResponseData
+ */
 
 /**
  * @typedef {{

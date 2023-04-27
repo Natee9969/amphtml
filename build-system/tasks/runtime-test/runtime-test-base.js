@@ -57,7 +57,7 @@ class RuntimeTestConfig {
 
   /**
    * @param {string} testType
-   * @param {{bentoOnly?: boolean}} [options]
+   * @param {{bentoOnly?: boolean}} options
    */
   constructor(testType, {bentoOnly = false} = {}) {
     this.testType = testType;

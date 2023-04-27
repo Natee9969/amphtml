@@ -72,7 +72,7 @@ const karmaJsPaths = [
 ];
 
 /**
- * @param {{bentoOnly?: boolean}} [options]
+ * @param {{bentoOnly?: boolean}} options
  * @return {Array<*>}
  */
 function getCommonUnitTestPaths({bentoOnly = false} = {}) {

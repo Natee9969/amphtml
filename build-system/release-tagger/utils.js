@@ -4,8 +4,12 @@
  */
 
 const dedent = require('dedent');
-const {GraphQlQueryResponseData, graphql} = require('@octokit/graphql'); // eslint-disable-line @typescript-eslint/no-unused-vars
+const {graphql} = require('@octokit/graphql');
 const {Octokit} = require('@octokit/rest');
+
+/**
+ * @typedef {import('@octokit/graphql').GraphQlQueryResponseData} GraphQlQueryResponseData
+ */
 
 /**
  * GitHub API util functions
